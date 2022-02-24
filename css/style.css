@@ -1,0 +1,97 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    background-image: url('../img/fondo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    padding-bottom:3rem;
+}
+.contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 19px;
+    text-align: center;
+    justify-content: center;
+}
+
+.tarjeta{
+    border-radius: 15px;
+    background-color: rgba(59, 196, 105, 0.253);
+    color: white;
+    width: 19em;
+    margin-top: 20px;
+}
+img{
+    border-radius: 15px 15px 0px 0px;
+    width: 100%;
+}
+img:hover{
+    	
+filter: grayscale(80%);
+}
+
+
+h2{
+    padding: 10px 0px;
+}
+p{
+    padding-bottom: 5px;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**--------------------EFECTO H1 TITULO---------------------------*/
+h1 {
+    letter-spacing:0.5em;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px; 
+}
+h1>span {
+    font-size: 3rem;
+    letter-spacing: 4px;
+    display: block;
+
+/* Clip Background Image */
+
+    background: url('../img/fondo-letra.png') repeat-y;
+    -webkit-background-clip: text;
+    background-clip: text;
+
+/* Animate Background Image */
+
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: aitf 70s linear infinite;
+
+/* Activate hardware acceleration for smoother animations */
+
+    -webkit-transform: translate3d(0,0,0);
+    -webkit-backface-visibility: hidden;
+
+}
+
+/* Animate Background Image */
+
+@-webkit-keyframes aitf {
+	0% { background-position: 0% 50%; }
+	100% { background-position: 100% 50%; }
+}
